@@ -1,0 +1,125 @@
+body{
+    overflow-x: hidden;
+}
+
+#hero{
+    background-image: url(../images/about_hero.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-color: #000;
+    opacity: .5;
+    z-index: -1;
+}
+
+#hero .hero-text{
+    padding: 0 5rem;
+    padding-top: 18rem;
+    position: absolute;
+    z-index: 1;
+}
+
+#hero .hero-text p{
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+#map{
+    padding: 8rem 0 4.5rem 0;
+}
+
+#map .map{
+    margin: 0 auto;
+    text-align: center;
+}
+
+#map .map img{
+    width: 90%;
+    height: 30rem;  
+}
+
+#contact .contact-contain{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+}
+
+#contact .contact-contain .form h2{
+    color: rgb(38, 30, 90);
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+#contact .form #message{
+    height: 10rem;
+    padding: 1rem 0;
+    border: 1px solid rgb(205, 205, 211);
+}
+
+#contact .form #text{
+    width: 20rem;
+    height: 3rem;
+    padding: 1rem;
+    border: 1px solid rgb(205, 205, 211);
+    margin: 1.5rem 1rem 0 0;
+}
+
+#contact .form #subject{
+    width: 41.3rem;
+    height: 3rem;
+    padding: 1rem;
+    border: 1px solid rgb(205, 205, 211);
+    margin: 1.5rem 0 0 0;
+}
+
+#contact .form #Send{
+    width: 8rem;
+    padding: 1.5rem;
+    margin: 2rem 0 0 0;
+    color: orangered;
+    border: 1px solid orangered;
+    background-color: transparent;
+    text-align: center;
+    font-size: .6rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+#contact .form #Send:hover{
+    background-color: orangered;
+    color: #fff;
+    transition: .5s all ease;
+}
+
+#contact .contact-info{
+    margin: 0 5rem 0 0;
+}
+
+#contact .contact-info .home{
+    display: flex;
+    padding: .8rem 0;
+}
+
+#contact .contact-info .home img{
+    padding: 1.2rem 0 .6rem 1.2rem;
+}
+
+#contact .contact-info .home h5{
+    padding: 1rem 0 .5rem 1rem;
+}
+
+#contact .contact-info .home p{
+    padding: 0 0 .5rem 1rem;
+    font-size: .9rem;
+}
